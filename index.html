@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SD Task List</title>
+</head>
+
+<body>
+    <header>
+        <h1>SD Task List</h1>
+        <h2>Maintening the life in programming studies</h2>
+    </header>
+    <main>
+        <form action="submit">
+            <section>
+                <input type="text" name="taskName" id="taskName" placeholder="Task name...">
+                <textarea name="taskDesc" id="taskDesc" placeholder="Task Description..."></textarea>
+                <input type="date" name="taskDate" id="taskDate">
+            </section>
+            <button type="button" id="taskBt">Register Task</button>
+        </form>
+        <section class="tasks">
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
