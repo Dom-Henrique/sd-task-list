@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --primary: #0F0119;
+    --secondary: #B03EFB;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 40px;
+    margin: 20vh;
+    font-family: "Quicksand", sans-serif;
+    margin: 0 auto;
+}
+
+main {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+div:not(.header) {
+    background-color: rgba(176, 62, 251, 0.2);
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 30px;
+    width: 100%;
+    color: white;
+    transition: .4s;
+}
+
+div:not(.header):hover {
+    background-color: rgba(176, 62, 251, 0.5);
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+.header {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.header h3 {
+    font-size: 60px;
+}
+
+.header h4 {
+    font-size: 20px;
+}
+
+header {
+    text-align: center;
+    margin: 2%
+}
+
+h1 {
+    margin: 0;
+
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+textarea,
+input {
+    height: 30px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: rgba(176, 62, 251, 0.2);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 20px;
+    outline: none;
+    transition: .4s;
+    resize: none;
+}
+
+textarea:focus,
+input:focus {
+    background-color: rgba(176, 62, 251, 0.5);
+    transition: .4s;
+}
+
+button {
+    width: fit-content;
+    padding: 20px;
+    border-radius: 60px;
+    border: none;
+    font-size: 20px;
+    background-image: linear-gradient(45deg, rgba(176, 62, 251), rgb(70 2 115));
+    color: white;
+    transition: .4s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(20px);
+    box-shadow: 0px 0px 50px #B03EFB;
+    transition: .4s;
+}
